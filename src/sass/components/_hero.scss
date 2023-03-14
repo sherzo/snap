@@ -1,0 +1,39 @@
+.hero {
+  &__image {
+    background: url('../images/image-hero-mobile.png') no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2.5em;
+  }
+  
+  &__content {
+    padding: 0 1em;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  &__copy {
+    color: $gray-color;
+    line-height: 1.5;
+    margin: 1.2em 0;
+  }
+
+  &__sponsors {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+
+    &__item {
+      img {
+        width: 60px;
+        height: auto;
+      }
+    }
+  }
+}

@@ -15,7 +15,73 @@ body {
   position: relative;
   font-family: sans-serif;
   font-family: "Epilogue", sans-serif;
-  font-size: 18px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  padding: 0.9em 1.2em;
+  border-radius: 15px;
+}
+
+.header__content {
+  padding: 1.2em 0.85em;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 25px;
+}
+.header__button {
+  border: none;
+  background-color: transparent;
+}
+
+.hero__image {
+  background: url("../images/image-hero-mobile.png") no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+.hero__content {
+  padding: 0 1em;
+  text-align: center;
+}
+.hero__title {
+  font-weight: bold;
+  font-size: 2em;
+}
+.hero__copy {
+  color: hsl(0, 0%, 41%);
+  line-height: 1.5;
+  margin: 1.2em 0;
+}
+.hero__sponsors {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+.hero__sponsors__item img {
+  width: 60px;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
