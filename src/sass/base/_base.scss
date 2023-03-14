@@ -15,5 +15,18 @@ body {
   position: relative;
   font-family: sans-serif;
   font-family: 'Epilogue', sans-serif;
-  font-size: 18px
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
