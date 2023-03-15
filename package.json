@@ -1,0 +1,30 @@
+{
+  "name": "snap",
+  "version": "1.0.0",
+  "description": "Simple web app",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherzo/snap.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Sass",
+    "Vite"
+  ],
+  "author": "sherzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sherzo/snap/issues"
+  },
+  "homepage": "https://github.com/sherzo/snap#readme",
+  "dependencies": {
+    "sass": "^1.59.3",
+    "vite": "^4.1.4"
+  }
+}
