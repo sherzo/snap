@@ -20,20 +20,18 @@
   &__copy {
     color: $gray-color;
     line-height: 1.5;
-    margin: 1.2em 0;
+    margin: 1.5em 0;
   }
 
   &__sponsors {
-    margin: 2em 0;
+    margin: 3em 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
 
-    &__item {
-      img {
-        width: 60px;
-        height: auto;
-      }
+    img {
+      width: 60px;
+      height: auto;
     }
   }
 }
