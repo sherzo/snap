@@ -30,8 +30,9 @@
     place-items: center;
 
     img {
-      width: 60px;
-      height: auto;
+      width: 70px;
+      height: 25px;
+      object-fit: contain;
     }
   }
 }
