@@ -1,20 +1,44 @@
 import './src/sass/main.scss';
 
+class SidebarOpenAnimator {
+  constructor() {
+    this.htmlElement = document.querySelector(".menu")
+  }
+
+  animate () {
+    document.body.style.overflow = "hidden"
+    this.htmlElement.style.visibility = "visible"
+    this.htmlElement.style.opacity = 1
+    this.htmlElement.classList.add("menu--show");
+  }
+}
+
+class SidebarCloseAnimator {
+  constructor() {
+    this.htmlElement = document.querySelector(".menu")
+  }
+
+  animate () {
+    document.body.style.overflow = "inherit"
+    this.htmlElement.classList.remove("menu--show");
+  }
+}
+
+class DOMEventBuilder {
+  listen(elem, event, callback) {
+    elem.addEventListener(event, callback)
+  }
+}
+
 function main() {
   const buttonHeader = document.querySelector(".header__button")
-  const menuElement = document.querySelector(".menu")
-  buttonHeader.addEventListener("click", () => {
-    document.body.style.overflow = "hidden"
-    menuElement.style.visibility = "visible"
-    menuElement.style.opacity = 1
-    menuElement.classList.add("menu--show");
-  })
-
   const closeButtonHeader = document.querySelector(".menu__button-close")
-  closeButtonHeader.addEventListener("click", () => {
-    document.body.style.overflow = "inherit"
-    menuElement.classList.remove("menu--show");
-  })
+
+  const sidebarOpenAnimator = new SidebarOpenAnimator()
+  const sidebarCloseAnimator = new SidebarCloseAnimator()
+  const domEventBuilder = new DOMEventBuilder()
+  domEventBuilder.listen(buttonHeader, "click", () => sidebarOpenAnimator.animate())
+  domEventBuilder.listen(closeButtonHeader, "click", () => sidebarCloseAnimator.animate())
 }
 
 main()
